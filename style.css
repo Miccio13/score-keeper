@@ -28,11 +28,44 @@ section {
   min-width: 200px;
 }
 
-h2 {
+h2.team-name {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.05em;
+  cursor: text;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  outline: none;
+}
+
+h2.team-name:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+h2.team-name:focus {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 2px rgba(125, 211, 252, 0.3);
+}
+
+.goal-times {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-height: 8rem;
+  overflow-y: auto;
+}
+
+.goal-times li {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.goal-times li:last-child {
+  border-bottom: none;
 }
 
 .score {

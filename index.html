@@ -8,21 +8,23 @@
 </head>
 <body>
   <section id="team-a">
-    <h2>Team A</h2>
+    <h2 class="team-name" contenteditable="true" data-team="a" id="name-a">Team A</h2>
     <p class="score" id="score-a">0</p>
     <div class="buttons">
-      <button type="button" onclick="incrementTeamA()">+1</button>
+      <button type="button" onclick="incremegintTeamA()">+1</button>
       <button type="button" onclick="decrementTeamA()">-1</button>
     </div>
+    <ul class="goal-times" id="goals-a" aria-label="Recent goals"></ul>
   </section>
 
   <section id="team-b">
-    <h2>Team B</h2>
+    <h2 class="team-name" contenteditable="true" data-team="b" id="name-b">Team B</h2>
     <p class="score" id="score-b">0</p>
     <div class="buttons">
       <button type="button" onclick="incrementTeamB()">+1</button>
       <button type="button" onclick="decrementTeamB()">-1</button>
     </div>
+    <ul class="goal-times" id="goals-b" aria-label="Recent goals"></ul>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
