@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #eee;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 200px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.score {
+  margin: 0 0 0.5rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #7dd3fc;
+}
+
+section button {
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+section button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+section button:active {
+  transform: translateY(0);
+}
+
+section button:first-of-type {
+  background: #22c55e;
+  color: #fff;
+}
+
+section button:first-of-type:hover {
+  background: #16a34a;
+}
+
+section button:last-of-type {
+  background: #ef4444;
+  color: #fff;
+}
+
+section button:last-of-type:hover {
+  background: #dc2626;
+}
+
+/* Button group: keep +1 and -1 side by side with spacing */
+section {
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.buttons button {
+  flex: 1;
+}

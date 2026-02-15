@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Keeper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="team-a">
+    <h2>Team A</h2>
+    <p class="score" id="score-a">0</p>
+    <div class="buttons">
+      <button type="button" onclick="incrementTeamA()">+1</button>
+      <button type="button" onclick="decrementTeamA()">-1</button>
+    </div>
+  </section>
+
+  <section id="team-b">
+    <h2>Team B</h2>
+    <p class="score" id="score-b">0</p>
+    <div class="buttons">
+      <button type="button" onclick="incrementTeamB()">+1</button>
+      <button type="button" onclick="decrementTeamB()">-1</button>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
